@@ -1,0 +1,528 @@
+/*design html,body */
+html,body{
+	background-image: url(../PICS/skyblue.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+}
+
+/*design the scrollbar to display none*/
+.scrollbar::-webkit-scrollbar{
+	display:none;
+}
+
+/*design sidebar*/
+#sidebar{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background-image:url(../PICS/skyblue.jpg);
+	left:-200px;
+	transition: all 500ms linear;
+}
+
+#sidebar.active{
+	left:0px;
+}
+
+#sidebar .head {
+	padding: 15px 10px;
+	color:white;
+	text-align: center;
+	font-size: 30px;
+}
+
+#sidebar .head a{
+	text-decoration: none;
+	color: white;
+}
+
+#sidebar ul li{
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 2px solid lightblue;
+}
+
+#sidebar ul li i{
+	padding-left: 30px;
+	font-size: 24px;
+	color: white;
+}
+
+#sidebar ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#sidebar .toggleSideBar{
+	position: absolute;
+	left:230px;
+	top: 20px;
+}
+
+#sidebar .toggleSideBar span{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px 0px;
+	margin-left: 20px;
+	background-color:white;
+}
+
+/*design homesidebar hover to display content*/
+.homesidebar{
+	overflow: hidden;
+}
+
+.homesidebar .homesidebarContent{
+	display:none;
+}
+
+.homesidebar .homesidebarContent ul li{
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 2px solid lightblue;
+}
+
+.homesidebar .homesidebarContent ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.homesidebar:hover .homesidebarContent{
+	display:block;
+}
+
+/*design title */
+.headerBar{
+	position: fixed;
+	width:100%;
+	background-image: url(../PICS/skyblue.jpg);
+}
+
+.header{
+	color:white;
+	font-weight:bold;
+	font-size: 30px;
+	text-align:center;
+	padding-top: 20px;
+}
+
+/*design for all page container*/
+.container{
+	padding-top:120px;
+}
+
+/*date and time*/
+.dateTimeContainer{
+	color: whitesmoke;
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	width: 180px;
+	padding: 10px;
+	margin-left: 80%;
+	position: fixed;
+	margin-top: 10px;
+}
+
+/*design register and login data for register page */
+.dataHeader{
+	font-size: 25px;
+	padding: 2px;
+	color:whitesmoke;
+
+}
+
+.dataContainer{
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 10px;
+}
+
+.data{
+	color: white;
+	padding: 10px;
+}
+
+.data label{
+	display: block;
+}
+
+.data input[type="radio"]{
+	margin: 12px 20px;
+}
+
+.data input[type="text"]
+{
+	width: 75%;
+	outline:none;
+	background:transparent;
+	padding: 12px 20px;
+	display: inline-block;
+	border:none;
+	border-bottom:3px solid lightblue;
+}
+
+.data select{
+	width: 75%;
+	padding: 12px 20px;
+	border:none;
+	background:transparent;
+	outline: none;
+	border-bottom:3px solid lightblue;
+}
+
+.data input[type="email"]{
+	width: 75%;
+	outline:none;
+	background:transparent;
+	padding: 12px 20px;
+	display: inline-block;
+	border:none;
+	border-bottom:3px solid lightblue;
+}
+
+.data input[type="password"]{
+	width: 75%;
+	outline:none;
+	padding: 12px 20px;
+	display: inline-block;
+	background:transparent;
+	border:none;
+	border-bottom:3px solid lightblue;
+}
+
+.data input[type="reset"],[type="submit"]{
+	padding: 9px 9px;
+}
+
+.data textarea{
+	width: 75%;
+	outline: none;
+	background: transparent;
+	padding: 12px 20px;
+	border:none;
+	border-bottom: 3px solid lightblue;
+	overflow: hidden;
+	resize : none;
+	word-wrap: break-word;
+
+}
+
+.data button{
+	padding: 9px 8px;
+	margin-left: 70px;
+}
+
+/*design contact form*/
+.contactContainer{
+	color: whitesmoke;
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	margin-left: 1200px;
+	width: 300px;
+	margin-top: 90px;
+	padding: 5px;
+	position:fixed;
+}
+
+.contactContainer li{
+	padding: 3px;
+	list-style-type: none;
+}
+.contactContainer li a{
+	text-decoration: none;
+	color: white;
+}
+
+/*design book site container*/
+.booksiteContainer{
+	height: 40%;
+	border-radius: 20px;
+	margin-top: 100px;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 10px;
+	display: flex;
+	text-align: center;
+}
+
+/*design login container for book site page*/
+.loginContainer{
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	width: 50%;
+	padding: 10px;
+	margin: 20px;
+}
+
+.loginContainer img{
+	width: 50%;
+	padding: 55px;
+}
+
+.loginContainer .userLogin {
+	text-align: center;
+}
+
+.loginContainer .userLogin a{
+	text-decoration: none;
+	color: white;
+}
+
+/*design register container for book site page*/
+.registerContainer{
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	width: 50%;
+	padding: 10px;
+	margin: 20px;
+}
+
+.registerContainer img{
+	width: 50%;
+	padding: 55px;
+}
+
+.registerContainer .userRegister{
+	text-align: center;
+}
+
+.registerContainer .userRegister a{
+	text-decoration: none;
+	color: white;
+}
+
+/*design about page*/
+.aboutContainer{
+	border: 4px solid lightblue;
+	height: 40%;
+	border-radius: 20px;
+	margin-top: 100px;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 10px;
+	display: flex;
+	font-size: 15px;
+}
+
+.aboutImageContainer{
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	width: 35%;
+	padding: 10px;
+	margin: 20px;
+}
+
+.aboutImageContainer img{
+	width: 100%;
+	height: 100%;
+}
+
+.aboutContainer fieldset{
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	width: 55%;
+	padding: 10px;
+	margin: 20px;
+}
+
+.aboutContainer fieldset .objective{
+	margin: 20px;
+}
+
+.aboutContainer fieldset ul li{
+	list-style: square;
+}
+
+.aboutContainer fieldset legend{
+	color: white;
+}
+
+/*design book Menu table*/
+#books{
+	border-collapse:collapse;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#books td, #books th{
+	border: 4px solid lightblue;
+	padding: 8px;
+	text-align: center;
+}
+
+#books td img{
+	height:100px;
+}
+
+#books td a{
+	text-decoration: none;
+	color: black;
+}
+
+#books td a:hover{
+	text-decoration:underline;
+	color:blue;
+}
+
+/*design for soMuchLongingInSoLittleSpace, theSpiritOfScienceFiction,theWhiteBook, exhalation, bowlaway*/
+.bookDetailContainer{
+	width:90%;
+	border: 4px solid lightblue;
+	height: 40%;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+}
+
+.bookDetailImageContainer{
+	width: 30%;
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	margin-left: 35%;
+	margin-right: 35%;
+	text-align: center;
+}
+
+.bookDetailImageContainer img{
+	height: 200px;
+}
+
+.bookDetailContainer fieldset{
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	width: 55%;
+	padding: 10px;
+	margin: 20px;
+}
+
+.bookDetailContainer fieldset legend{
+	color: white;
+}
+
+.bookDetailContainer fieldset ul li{
+	text-align: justify;
+	list-style-type: none;
+	padding: 10px;
+}
+
+.bookDetailContainer fieldset ul li a{
+	text-decoration: none;
+	color:black;
+}
+
+.bookDetailContainer fieldset ul li a:hover{
+	text-decoration: underline;
+	color:blue;
+}
+
+.bookDetailContainer .about fieldset{
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	width: 90%;
+	padding: 10px;
+	margin: 20px;
+}
+
+/*design home page*/
+.homeContainer{
+	height: 40%;
+	border-radius: 20px;
+	margin-top: 100px;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 10px;
+	display: flex;
+	text-align: center;
+}
+
+/*design book menu in the home page*/
+.bookContainer{
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	width: 50%;
+	padding: 10px;
+	margin: 20px;
+}
+
+.bookContainer img{
+	width: 50%;
+	padding: 55px;
+}
+
+.bookContainer .book{
+	text-align: center;
+}
+
+.bookContainer .book a{
+	text-decoration: none;
+	color: white;
+}
+
+/*design purchase book in the home page*/
+.purchaseBookContainer{
+	border: 4px solid lightblue;
+	border-radius: 20px;
+	width: 50%;
+	padding: 10px;
+	margin: 20px;
+}
+
+.purchaseBookContainer img{
+	width: 50%;
+	padding: 55px;
+}
+
+.purchaseBookContainer .purchaseBook{
+	text-align: center;
+}
+
+
+.purchaseBookContainer .purchaseBook a{
+	text-decoration: none;
+	color: white;
+}
+
+
+/*design purchase book page*/
+.purchaseBookStyle{
+	border-collapse:collapse;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.purchaseBookStyle td, .purchaseBookStyle th{
+	border: 4px solid lightblue;
+	padding: 8px;
+	text-align: center;
+}
+
+.purchaseBooktotal{
+	border-collapse:collapse;
+	width: 60%;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.purchaseBooktotal td, .purchaseBooktotal th{
+	border: 4px solid lightblue;
+	padding: 8px;
+	text-align: center;
+}
+
+.purchaseSubmitBtn{
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+}
