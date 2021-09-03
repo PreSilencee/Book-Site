@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type ="text/css" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/main.js"></script>
+    <head>
+        <title>Book Site - Purchase Book</title>
+    </head>
+    <body class = "scrollbar" onload = "displayTime()">
+        <!--header-->    
+        <header>
+            <div class="headerBar">
+                <div id = "sidebar">
+                    <div class = "toggleSideBar" onclick="toggle()">
+                        <span></span>   
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="head">
+                        <a href="BookSite.html">Book Site</a>
+                    </div>
+
+                    <ul>
+                        <div class="homesidebar">
+                        <li><a href="home.html">Home</a><i class="fa fa-caret-down"></i></li>
+                            <div class="homesidebarContent">
+                                <ul>
+                                    <li><a href="bookMenu.html">Book Menu</a></li>
+                                    <li><a href="purchaseBook.html">Purchase Book</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                
+                <div class = "dateTimeContainer">
+                    <div id="time"></div>
+                </div>
+
+                <div class="header">
+                    Purchase Book
+                </div> 
+            </div>
+        </header>
+        <!--form-->
+        <form action="purchaseBook.html" id= "bookDocument" onsubmit="calculateBookTotalPrice()">
+            <div class = "container">
+                <table class = "purchaseBookStyle">
+                    <tr>
+                        <th></th>
+                        <th>Book Name</th>
+                        <th>Price (RM)</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id = "littlespace" onclick="calculateBookPrice(); calculateDeliveryFee();"></td>
+                        <td>So Much Longing In So Little Space</td>
+                        <td>47.95</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id = "scienceFiction" onclick="calculateBookPrice(); calculateDeliveryFee();"></td>
+                        <td>The Spirit Of Science Fiction</td>
+                        <td>65.82</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id ="whitebook" onclick="calculateBookPrice(); calculateDeliveryFee();"></td>
+                        <td>The White Book</td>
+                        <td>48.28</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" id ="exhalation" onclick="calculateBookPrice(); calculateDeliveryFee();"></td>
+                        <td>Exhalation</td>
+                        <td>73.24</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" id ="bowlaway" onclick="calculateBookPrice(); calculateDeliveryFee();"></td>
+                        <td>Bowlaway</td>
+                        <td>75.64</td>
+                    </tr>
+                </table>
+
+                <table class = "purchaseBooktotal">
+                    <tr>
+                        <th></th>
+                        <th>RM</th>
+                    </tr>
+                    <tr>
+                        <td>Price of Book</td>
+                        <td><div id="result"></div></td>
+                    </tr>
+                        <tr>
+                            <td>Delivery Fee</td>
+                            <td><div id = "delivery"></div></td>
+                        </tr>
+                </table>
+                    <div class = "purchaseSubmitBtn">
+                        <input type="submit" value="Estimate"/>
+                    </div>                
+            </div>
+        </form>
+    </body>
+</html>

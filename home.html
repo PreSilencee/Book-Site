@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+    <link rel="stylesheet" type ="text/css" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/main.js"></script>
+    <head>
+        <title>Book Site - HOME</title>
+    </head>
+    <body class = "scrollbar" onload="displayTime()">
+        <!--header-->
+        <header>
+            <div class="headerBar">
+                <div id = "sidebar">
+                    <div class = "toggleSideBar" onclick="toggle()">
+                        <span></span>   
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="head">
+                        <a href="BookSite.html">Book Site</a>
+                    </div>
+                    
+                    <ul>
+                        <div class="homesidebar">
+                            <li><a href="home.html">Home</a><i class="fa fa-caret-down"></i></li>
+                                <div class="homesidebarContent">
+                                    <ul>
+                                        <li><a href="bookMenu.html">Book Menu</a></li>
+                                        <li><a href="purchaseBook.html">Purchase Book</a></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>       
+                </div>
+                            
+                <div class = "dateTimeContainer">
+                    <div id="time"></div>
+                </div>
+                            
+                <div class="header">
+                    Home
+                </div> 
+            </div>
+        </header>
+        <!--container-->
+        <div class="container">
+            <div class= "homeContainer">
+                <div class="bookContainer">
+                    <img src="PICS/book.png" alt="book">
+                        <div class="book">
+                            <a href="bookMenu.html">Books</a>
+                        </div>
+                    </div>
+                        
+                    <div class="purchaseBookContainer">
+                        <img src="PICS/purchaseBook.png" alt="purchaseBook">
+                        <div class="purchaseBook">
+                            <a href="purchaseBook.html">Purchase Books</a>
+                        </div>
+                </div>
+            </div>   
+        </div>
+    </body>
+</html>

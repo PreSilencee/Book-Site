@@ -1,0 +1,58 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/main.js"></script>
+    <head>
+        <title>Book Site- Login</title>
+    </head>
+    <body class= "scrollbar" onload = "displayTime()">
+        <!--header-->
+        <header>
+            <div class="headerBar">
+                    <div id = "sidebar">
+                            <div class = "toggleSideBar" onclick="toggle()">
+                                <span></span>   
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="head">
+                                <a href="BookSite.html">Book Site</a>
+                            </div>
+                            <ul>
+                                <li><a href="register.html">Register</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul> 
+                    </div>
+                    <div class = "dateTimeContainer">
+                        <div id="time"></div>
+                    </div>
+                    <div class="header">
+                        Login Page
+                    </div> 
+                </div>
+        </header>
+        <!--form-->
+        <form name="login" action= "home.html" method="GET" autocomplete="off" onsubmit="return loginForm(document.login.userN, document.login.password)">
+            <div class="container">
+                <fieldset class= "dataContainer">
+                    <legend class="dataHeader">Login Form</legend>
+                        <div class="data">
+                            <label for="username">Username[only letters]: </label>
+                                <input type="text" name="userN" required/>
+                        </div>
+                    
+                        <div class="data">
+                            <label for="password">Password[must be between 4 and 8 digits long and include at least one numeric digit]: </label>
+                                <input type="password" name="password" required/>
+                        </div>
+                
+                        <div class ="data">
+                            <input type="submit" name="submit" value="SUBMIT"/>
+                            <input type="reset" value="RESET"/>
+                        </div>                       
+                </fieldset>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/main.js"></script>
+    <head>
+        <title>Book Site - Register</title>
+    </head>
+    <body class="scrollbar" onload="displayTime()">
+        <!--header-->
+        <header>
+            <!--navigation bar-->
+                <div class="headerBar">
+                        <div id = "sidebar">
+                                <div class = "toggleSideBar" onclick="toggle()">
+                                    <span></span>   
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="head">
+                                    <a href="BookSite.html">Book Site</a>
+                                </div>
+                                <ul>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>     
+                        </div>
+                        <div class = "dateTimeContainer">
+                            <div id="time"></div>
+                        </div>
+                        <div class="header">
+                            Register Page
+                        </div> 
+                    </div>
+        </header>
+        <!--form-->
+        <form action="home.html" name="register" method="GET" autocomplete="off" onsubmit="return registerForm()">
+            <div class ="container">
+                    <fieldset class= "dataContainer">
+                            <legend class="dataHeader">Enter Your Data...</legend>
+                                <div class="data">
+                                <label for="username">Username[only letters]: </label>
+                                    <input type="text" id = "username" name="username" onblur= "validateUsername()"required/>
+                                </div>
+            
+                                <div class="data">
+                                    <label for="password">Password: </label>
+                                    <input type="password" id="password" name="password" onchange="validPassword()" required/>
+                                </div>
+            
+                                <div class="data">
+                                    <label for="cPassword">Confirm Password:</label>
+                                    <input type="password" id= "cPassword" name="cPassword" onchange="validPassword()" required/>
+                                    <span id="message"></span>
+                                </div>
+            
+                                <div class="data">
+                                    <label for="gender">Gender:</label>
+                                    <input type="radio" name="gender" value="Male" onclick="showInputTextField(1)" required/>Male
+                                    <input type="radio" name="gender" value="Female" onclick="showInputTextField(1)"/>Female
+                                    <input type="radio" name="gender" onclick="showInputTextField(0)"/>Other 
+                                    <span id="otherValue"></span>
+                                </div>
+                
+                                <div class="data">
+                                    <label for="email">Email: </label>
+                                    <input type="email" name="email" onblur="validateEmail()" required/>
+                                </div>
+                                
+                                <div class="data">
+                                    <label for="country">Country: </label>
+                                    <select id="myCountry" name="country" required>
+                                        <option disabled selected value>--Select a Country--</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="China">China</option>
+                                    </select>
+                                    <button type="button" onclick="addCountry()">Add a country</button>
+                                </div>
+                                    <div class="data">
+                                        <input type="submit" id = "submit" value="SUBMIT" />
+                                        <input type="reset" value="RESET"/>
+                                    </div>
+                                    
+                        
+                                
+                        </fieldset>
+            </div>   
+        </form>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type ="text/css" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/main.js"></script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Book Site - Book Menu</title>
+    </head>
+    <body class= "scrollbar" onload="displayTime()">
+        <!--header-->
+        <header>
+            <div class="headerBar">
+                <div id = "sidebar">
+                    <div class = "toggleSideBar" onclick="toggle()">
+                        <span></span>   
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <div class="head">
+                        <a href="BookSite.html">Book Site</a>
+                    </div>
+                        <ul>
+                            <div class="homesidebar">
+                                <li><a href="home.html">Home</a><i class="fa fa-caret-down"></i></li>
+                                    <div class="homesidebarContent">
+                                        <ul>
+                                            <li><a href="bookMenu.html">Book Menu</a></li>
+                                            <li><a href="purchaseBook.html">Purchase Book</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                </div>
+                
+                <div class = "dateTimeContainer">
+                    <div id="time"></div>
+                </div>
+                
+                <div class="header">
+                    Book Menu
+                </div> 
+            </div>
+        </header>
+        <!--container-->
+        <div class="container">
+            <table id = "books">
+                <tr>
+                    <th>No</th>
+                    <th>Book Image</th>
+                    <th>Book Name</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="PICS/theSpiritOfScienceFiction.PNG" alt="The Spirit of Science Fiction"></td>
+                    <td><a href="theSpiritOfScienceFiction.html">The Spirit of Science Fiction</a></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td><img src="PICS/theWhiteBook.PNG" alt = "whitebook"></td>
+                    <td><a href="theWhiteBook.html">The White Book</a></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td><img src="PICS/littlespace.PNG" alt= "little space"></td>
+                    <td><a href="soMuchLongingInSoLittleSpace.html">So Much Longing In So Little Space</a></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td><img src="PICS/exhalation.PNG" alt= "Exhalation"></td>
+                    <td><a href="exhalation.html">Exhalation</a></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td><img src="PICS/bowlaway.PNG" alt= "Bowlaway"></td>
+                    <td><a href="bowlaway.html">Bowlaway</a></td>
+                </tr>
+            </table>    
+        </div>
+    </body>
+</html>

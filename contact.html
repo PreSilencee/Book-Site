@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+    <link rel="stylesheet" type ="text/css" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/main.js"></script>
+    <head>
+        <title>Book Site - CONTACT</title>
+    </head>
+    <body class="scrollbar" onload="displayTime()">
+        <!--header-->
+        <header>
+            <div class="headerBar">
+                <div id = "sidebar">
+                    <div class = "toggleSideBar" onclick="toggle()">
+                        <span></span>   
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="head">
+                        <a href="BookSite.html">Book Site</a>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class = "dateTimeContainer">
+                    <div id="time"></div>
+                </div>
+                    <div class="header">
+                        CONTACT
+                    </div> 
+                </div>
+        </header>
+
+        <!--form-->
+        <form name="contact" autocomplete="off" onsubmit="submitContact()">
+            <div class="container">
+                <fieldset class="dataContainer">
+                    <legend class="dataHeader">Contact Form</legend>
+                        <div class="data">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" required/>
+                        </div>
+                
+                        <div class="data">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" onblur="validateEmailContact()" required/>
+                        </div>
+                
+                        <div class="data">
+                            <label for="comment">Comment: </label>
+                            <textarea placeholder="Enter your comment" required></textarea>
+                        </div>
+                        <div class="data">
+                            <input type="submit" value="SUBMIT"/>
+                            <input type="reset" value="RESET"/>
+                        </div>
+                </fieldset>
+            </div>
+        </form>
+
+        <footer>
+            <fieldset class="contactContainer">
+                <legend>My Contact</legend>
+                    <ul>
+                        <li>Email: <a href="mailto:junioraymond92@gmail.com">junioraymond92@gmail.com</a></li>
+                        <li>Phone: 010-9827165</li>
+                    </ul>
+                </fieldset>
+        </footer>
+    </body>
+</html>
